@@ -30,3 +30,19 @@ The way the game is played is as follows: One person arranges the piles in the s
 2. For any given column x, assume that the maximum height of a pile in that column occurs in row y. Then the heights of the piles must be decreasing outward from row y in column x. Mathematically, ∀i < j ≤ y, h(i, x) ≤ h(j, x) and ∀i > j ≥ y, h(i, x) ≤ h(j, x).
 
 The goal of this problem is to determine the minimum number of coins is needed to satisfy the grid restrictions, given a grid of coin heights.
+
+The following is an example of the results for a 5 by 5 grid. The total number
+of coins in this case should be 26.
+
+Original matrix: 1 2 5 3 3
+2 4 1 5 1
+2 1 1 5 2
+1 1 5 1 3
+4 3 1 5 1
+
+
+After algorithm runs: 1 2 5 3 3
+2 4 5 5 3
+2 4 5 5 3
+2 4 5 5 3
+4 4 4 5 1
